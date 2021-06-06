@@ -1,5 +1,5 @@
 <template>
-  <h1> This is the Products\ Detail Page</h1>
+  <h1> This is the Products Detail Page</h1>
 </template>
 
 <script>
