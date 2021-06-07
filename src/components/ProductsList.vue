@@ -1,11 +1,12 @@
 <template>
-  <div class="grid-wrap">
+  <div v-if="products.length>0" class="grid-wrap">
     <ProductsListItem
       v-for="product in products"
       :key="product.id"
       :product="product"
     />
   </div>
+  <p v-else>You havent added any product to your cart</p>
 </template>
 
 <script>
