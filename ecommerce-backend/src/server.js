@@ -89,7 +89,7 @@ export const products = [{
   averageRating: '5.0',
 }];
 
-export const cartItems = [
+export let cartItems = [
   products[0],
   products[2],
   products[3],
@@ -108,7 +108,7 @@ app.get('/api/users/:userId/cart',(req,res)=>{
 });
 
 app.get('/api/products/:productId',(req,res)=>{
-	const {productId} = req.params;
+	const { productId } = req.params;
 	const product =  products.find((product)=>(product.id === productId));
 	if(product) {
 		res.status(200).json(product);
@@ -116,6 +116,26 @@ app.get('/api/products/:productId',(req,res)=>{
 	else{
 		res.status(404).json("couldnot find the product");
 	}
+});
+
+app.post('/api/users/:userId/cart',(req,res)=>{
+	const { productId } = req.body;
+	const product = products.find((product)=>(product.id === productId));
+
+	if(product) {
+		cartItems.push(product);
+		res.status(200).json(cartItems);
+	}
+	else {
+		res.status(404).json("could not find product");
+	}
+});
+
+
+app.delete('/api/users/:userId/cart/:productId',(req,res)=>{
+	const { productId } = req.params;
+	cartItems = cartItems.filter(product=>product.id !== productId);
+	res.status(200).json(cartItems);
 });
 
 app.listen(8000,()=>{
