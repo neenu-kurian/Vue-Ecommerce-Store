@@ -62,11 +62,4 @@ img {
   right: 16px;
 }
 
-.green-button {
-  background-color: green;
-}
-
-.grey-button {
-  background-color: #888;
-}
 </style>
