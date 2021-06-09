@@ -32,15 +32,15 @@ app.get('/api/users/:userId/cart', async (req, res) => {
   const user = await db.collection('users').findOne({ id: userId });
   if (!user) return res.status(404).json('Couldnt find user');
   const products = await db
-    .collections('products')
+    .collection('products')
     .find({})
     .toArray();
   const cartItemIds = user.cartItems;
 
-  const cartItems = cartItemIds.map((cartItemId) => {
-    products.find((eachproduct) => eachproduct.id === cartItemId);
-  });
-
+  const cartItems = cartItemIds.map((cartItemId) => 
+    products.find((eachproduct) => eachproduct.id === cartItemId)
+  );
+  
   res.status(200).json(cartItems);
   client.close();
 });
@@ -82,6 +82,11 @@ app.post('/api/users/:userId/cart', async (req, res) => {
 
   const user = await db.collection('users').findOne({ id: userId });
   const cartItemIds = user.cartItems;
+  const products = await db
+    .collection('products')
+    .find({})
+    .toArray();
+    
   const cartItems = cartItemIds.map((id) =>
     products.find((product) => product.id === id)
   );
