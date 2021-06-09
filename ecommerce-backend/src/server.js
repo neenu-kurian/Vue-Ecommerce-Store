@@ -86,7 +86,7 @@ app.post('/api/users/:userId/cart', async (req, res) => {
     .collection('products')
     .find({})
     .toArray();
-    
+
   const cartItems = cartItemIds.map((id) =>
     products.find((product) => product.id === id)
   );
@@ -101,10 +101,10 @@ app.delete('/api/users/:userId/cart/:productId', async (req, res) => {
   });
   const db = client.db('vue-db');
 
-  const { productId } = req.params.productId;
-  const { userId } = req.params.userId;
-
-  await db.collections('users').updateOne(
+  const { productId , userId } = req.params;
+  console.log(productId,userId);
+  
+  await db.collection('users').updateOne(
     { id: userId },
     {
       $pull: { cartItems: productId },
