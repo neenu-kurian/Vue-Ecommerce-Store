@@ -19,14 +19,13 @@ export default {
 <style scoped>
 .product-item {
   align-items: center;
-  border-radius: 8px;
   box-shadow: 0px 2px 5px #888;
   display: flex;
   flex-direction: column;
   margin-bottom: 2%;
   padding: 20px;
   position: relative;
-  width: 32%;
+  width: 23%;
 }
 
 .product-name {
@@ -35,7 +34,7 @@ export default {
 
 img {
   height: 200px;
-  width: 200px;
+  width: 100%;
 }
 
 a {
@@ -44,5 +43,16 @@ a {
 
 button {
   width: 100%;
+  background: transparent;
+  color: #006a89;
+  border: 1px solid #006a89;
+  border-radius: 0;
 }
+
+button:hover {
+  background: #006a89;
+  color: white;
+  border: 1px solid #006a89;
+}
+
 </style>

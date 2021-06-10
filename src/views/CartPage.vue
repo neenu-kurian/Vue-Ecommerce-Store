@@ -57,6 +57,17 @@ h1 {
 
 #checkout-button {
   width: 100%;
+  background: transparent;
+  color: #006a89;
+  border: 1px solid #006a89;
+  border-radius: 0;
+}
+
+
+#checkout-button:hover {
+  background: #006a89;
+  color: white;
+  border: 1px solid #006a89;
 }
 
 </style>

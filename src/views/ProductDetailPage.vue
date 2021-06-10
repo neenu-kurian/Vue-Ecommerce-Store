@@ -75,7 +75,19 @@ img {
 
 #add-to-cart {
 	width: 100%;
+  background: transparent;
+  color: #006a89;
+  border: 1px solid #006a89;
+  border-radius: 0;
 }
+
+
+#add-to-cart:hover {
+  background: #006a89;
+  color: white;
+  border: 1px solid #006a89;
+}
+
 
 #price {
 	position: absolute;

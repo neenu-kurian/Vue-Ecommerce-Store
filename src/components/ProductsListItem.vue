@@ -39,5 +39,15 @@ export default {
 .remove-button {
   flex: 1;
   margin: auto;
+  background: transparent;
+  color: #006a89;
+  border: 1px solid #006a89;
+  border-radius: 0;
+}
+
+.remove-button:hover {
+  background: #006a89;
+  color: white;
+  border: 1px solid #006a89;
 }
 </style>
