@@ -29,6 +29,7 @@ Product Lister Page:
 ![image](https://user-images.githubusercontent.com/36845478/121810667-081e5900-cc62-11eb-83c0-2ff9e408ee4d.png)
 
 Product Detail Page:
+
 ![image](https://user-images.githubusercontent.com/36845478/121810675-0f456700-cc62-11eb-80ab-4d8ff6ebd4fb.png)
 ![image](https://user-images.githubusercontent.com/36845478/121810683-166c7500-cc62-11eb-9621-f6cab13b6dc8.png)
 
