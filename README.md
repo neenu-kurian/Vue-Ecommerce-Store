@@ -24,8 +24,10 @@ npm run dev
 ```
 npm run start
 ```
-![image](https://user-images.githubusercontent.com/36845478/121810612-de653200-cc61-11eb-8211-cc7ebf9ac406.png)
-![image](https://user-images.githubusercontent.com/36845478/121810623-e58c4000-cc61-11eb-91fe-08f5947505e7.png)
-![image](https://user-images.githubusercontent.com/36845478/121810635-ed4be480-cc61-11eb-9e22-c3542d54f6ed.png)
+![image](https://user-images.githubusercontent.com/36845478/121810667-081e5900-cc62-11eb-83c0-2ff9e408ee4d.png)
+![image](https://user-images.githubusercontent.com/36845478/121810675-0f456700-cc62-11eb-80ab-4d8ff6ebd4fb.png)
+![image](https://user-images.githubusercontent.com/36845478/121810683-166c7500-cc62-11eb-9621-f6cab13b6dc8.png)
+![image](https://user-images.githubusercontent.com/36845478/121810686-1bc9bf80-cc62-11eb-8b17-80c76c8cc0e4.png)
+
 
 
