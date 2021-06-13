@@ -1,6 +1,6 @@
-# ecommercestore
+# Ecommerce Store
 
-A simple full stack ecommerce store that gets products from database and displays on FrontEnd. Still needs improvements and is in progress.
+A simple MEVN fullstack ecommerce store that gets products from database and displays on UI. User can see all products, add products to cart , go to cart and remove products from cart. It still needs improvements and is in progress.
 
 Stack Used: Vue.js, Express.js, Node.js, Axios and Mongodb
 
@@ -24,9 +24,15 @@ npm run dev
 ```
 npm run start
 ```
+
+Product Lister Page:
 ![image](https://user-images.githubusercontent.com/36845478/121810667-081e5900-cc62-11eb-83c0-2ff9e408ee4d.png)
+
+Product Detail Page:
 ![image](https://user-images.githubusercontent.com/36845478/121810675-0f456700-cc62-11eb-80ab-4d8ff6ebd4fb.png)
 ![image](https://user-images.githubusercontent.com/36845478/121810683-166c7500-cc62-11eb-9621-f6cab13b6dc8.png)
+
+Cart Page:
 ![image](https://user-images.githubusercontent.com/36845478/121810686-1bc9bf80-cc62-11eb-8b17-80c76c8cc0e4.png)
 
 
